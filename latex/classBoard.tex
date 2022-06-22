@@ -1,0 +1,169 @@
+\hypertarget{classBoard}{}\doxysection{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}{Board}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBoard}{Board}} This is the construcor of the class \mbox{\hyperlink{classBoard}{Board}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classPiece}{Piece}} $>$ $>$ \& \mbox{\hyperlink{classBoard_ac0f8279e1f58607f05d1ea0c5a4d84b4}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em get\+Board This is the getter for the attribute board \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPiece}{Piece}} \& \mbox{\hyperlink{classBoard_a7533b02f7a823ad0c37d78a8df922dab}{get\+Piece}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em get\+Square This method gets the piece at the given position \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_a498a2140809d38236ecd36eec245fda1}{put}} (\mbox{\hyperlink{classPiece}{Piece}} piece, \mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em put This method puts a piece on the board \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_af0fbccf26c34d99f2cdaf0d0b71681e4}{is\+Inside}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em is\+Inside This method checks if a position is inside the board \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBoard_af5494dd5fdd306e0cdaa336c1727b217}{remove}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em remove This method removes a piece at the given position \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a1233daa8ce9bcf312874fd81370c187b}{is\+My\+Own}} (\mbox{\hyperlink{classPosition}{Position}} position, Player\+Color color)
+\begin{DoxyCompactList}\small\item\em is\+My\+Own This method checks if a piece on a board is the same color as the player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBoard_a9ebc7a70a2ee91147959910345ad4eac}{is\+Free}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em is\+Free This method checks if a position on the board is free \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}\label{classBoard_a9ee491d4fea680cf69b033374a9fdfcb}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBoard}{Board}} This is the construcor of the class \mbox{\hyperlink{classBoard}{Board}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & Value of abciss for the board \\
+\hline
+{\em width} & Value of ordinate for the board \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_ac0f8279e1f58607f05d1ea0c5a4d84b4}\label{classBoard_ac0f8279e1f58607f05d1ea0c5a4d84b4}} 
+\index{Board@{Board}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classPiece}{Piece}} $>$ $>$ \& Board\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Board This is the getter for the attribute board 
+
+\begin{DoxyReturn}{Returns}
+a vector of vector of Square which represents the board 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a7533b02f7a823ad0c37d78a8df922dab}\label{classBoard_a7533b02f7a823ad0c37d78a8df922dab}} 
+\index{Board@{Board}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPiece()}{getPiece()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPiece}{Piece}} \& Board\+::get\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Square This method gets the piece at the given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the position to get the piece from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a piece of the board 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a9ebc7a70a2ee91147959910345ad4eac}\label{classBoard_a9ebc7a70a2ee91147959910345ad4eac}} 
+\index{Board@{Board}!isFree@{isFree}}
+\index{isFree@{isFree}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isFree()}{isFree()}}
+{\footnotesize\ttfamily bool Board\+::is\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+is\+Free This method checks if a position on the board is free 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position on the board asked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s free else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_af0fbccf26c34d99f2cdaf0d0b71681e4}\label{classBoard_af0fbccf26c34d99f2cdaf0d0b71681e4}} 
+\index{Board@{Board}!isInside@{isInside}}
+\index{isInside@{isInside}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isInside()}{isInside()}}
+{\footnotesize\ttfamily bool Board\+::is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+is\+Inside This method checks if a position is inside the board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s inside else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a1233daa8ce9bcf312874fd81370c187b}\label{classBoard_a1233daa8ce9bcf312874fd81370c187b}} 
+\index{Board@{Board}!isMyOwn@{isMyOwn}}
+\index{isMyOwn@{isMyOwn}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isMyOwn()}{isMyOwn()}}
+{\footnotesize\ttfamily bool Board\+::is\+My\+Own (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position,  }\item[{Player\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+is\+My\+Own This method checks if a piece on a board is the same color as the player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the piece on the board \\
+\hline
+{\em color} & The color of the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s the same else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBoard_a498a2140809d38236ecd36eec245fda1}\label{classBoard_a498a2140809d38236ecd36eec245fda1}} 
+\index{Board@{Board}!put@{put}}
+\index{put@{put}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily void Board\+::put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPiece}{Piece}}}]{piece,  }\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+put This method puts a piece on the board 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position to put the piece \\
+\hline
+{\em piece} & The piece to put on \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBoard_af5494dd5fdd306e0cdaa336c1727b217}\label{classBoard_af5494dd5fdd306e0cdaa336c1727b217}} 
+\index{Board@{Board}!remove@{remove}}
+\index{remove@{remove}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Board\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+remove This method removes a piece at the given position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the piece\textquotesingle{}s to remove at \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+board.\+h\item 
+board.\+cpp\end{DoxyCompactItemize}

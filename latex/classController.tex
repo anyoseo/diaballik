@@ -1,0 +1,206 @@
+\hypertarget{classController}{}\doxysection{Controller Class Reference}
+\label{classController}\index{Controller@{Controller}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classController_a8f98dfef8d6e384a2837f0374df85595}{Controller}} (\mbox{\hyperlink{classGame}{Game}} \&game)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classController}{Controller}} Constructor of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a3a9e81ea10c63eea81c2612ba3beb5c4}\label{classController_a3a9e81ea10c63eea81c2612ba3beb5c4}} 
+void \mbox{\hyperlink{classController_a3a9e81ea10c63eea81c2612ba3beb5c4}{start\+Game}} ()
+\begin{DoxyCompactList}\small\item\em start\+Game Method which initialize the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a18fadae8dfeba763b14f4a1150c2d8a3}{tokenisation}} (std\+::vector$<$ std\+::string $>$ \&tokens, std\+::string command)
+\begin{DoxyCompactList}\small\item\em tokenisation Method which splits the command entered by the user \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a25b1238b25457f5e95177d01b8e40a81}\label{classController_a25b1238b25457f5e95177d01b8e40a81}} 
+void \mbox{\hyperlink{classController_a25b1238b25457f5e95177d01b8e40a81}{gestion\+Command}} ()
+\begin{DoxyCompactList}\small\item\em gestion\+Command Method which manages the right action to apply from the user command \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a5b5ada650715470349f8b13998e3f0f0}{apply\+Move}} (unsigned index, std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ moves)
+\begin{DoxyCompactList}\small\item\em apply\+Move Method which applies the command move \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ \mbox{\hyperlink{classController_a28e4cfaf0a222c9243e4c501a920e91f}{apply\+Moves}} (std\+::vector$<$ std\+::string $>$ \&tokens)
+\begin{DoxyCompactList}\small\item\em apply\+Moves Method which applies the command moves \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$ \mbox{\hyperlink{classController_a74469d2eac76c095bbb175dc0b413f5e}{apply\+Throws}} ()
+\begin{DoxyCompactList}\small\item\em apply\+Throws Method which applies the command throws \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classController_a3ab3a5a5fc09b5925cd5b472d329ced9}{ask\+Command}} ()
+\begin{DoxyCompactList}\small\item\em ask\+Command Method which ask an input from the user \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classController_a1be858448f493587e4dc402a1922bb99}{ask\+Variante}} ()
+\begin{DoxyCompactList}\small\item\em ask\+Variante Method which ask an input from the user for the type of game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_acd4f6ee0354ec302592b3df208cd5181}\label{classController_acd4f6ee0354ec302592b3df208cd5181}} 
+void \mbox{\hyperlink{classController_acd4f6ee0354ec302592b3df208cd5181}{display\+Welcome}} ()
+\begin{DoxyCompactList}\small\item\em display\+Welcome Method which displays a welcome message \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_ab25975173494681d39d2cdad77d4f890}{display\+Switch\+End}} (Player\+Color color)
+\begin{DoxyCompactList}\small\item\em display\+Switch\+End Method which displays the switch of player \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a3dd13dac2d055261357d96e7c1dabae1}\label{classController_a3dd13dac2d055261357d96e7c1dabae1}} 
+void \mbox{\hyperlink{classController_a3dd13dac2d055261357d96e7c1dabae1}{display\+Board}} ()
+\begin{DoxyCompactList}\small\item\em display\+Board Method which displays the game\textquotesingle{}s board \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_aabe2b4305a12bdf9eb0d5864c642d4ed}{diplay\+Moves}} (std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ moves)
+\begin{DoxyCompactList}\small\item\em diplay\+Moves Method which displays the available moves for a piece \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classController_a2db37dd074885db48d9192e888f84e94}{display\+Throws}} (std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$ positions)
+\begin{DoxyCompactList}\small\item\em display\+Throws Method which displays the available throws \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classController_a5ee05536d5d5d5b5df73b96477ebad0f}\label{classController_a5ee05536d5d5d5b5df73b96477ebad0f}} 
+void {\bfseries display\+Left\+Moves} ()
+\item 
+\mbox{\Hypertarget{classController_ab64eea97ee11edc89bf77e52b5fc6f16}\label{classController_ab64eea97ee11edc89bf77e52b5fc6f16}} 
+void \mbox{\hyperlink{classController_ab64eea97ee11edc89bf77e52b5fc6f16}{display\+Help}} ()
+\begin{DoxyCompactList}\small\item\em display\+Help Method which displays the differents commands available in the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classController_a8f98dfef8d6e384a2837f0374df85595}\label{classController_a8f98dfef8d6e384a2837f0374df85595}} 
+\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily Controller\+::\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} \&}]{game }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classController}{Controller}} Constructor of the class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & the value to initialize the attribute game \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classController_a5b5ada650715470349f8b13998e3f0f0}\label{classController_a5b5ada650715470349f8b13998e3f0f0}} 
+\index{Controller@{Controller}!applyMove@{applyMove}}
+\index{applyMove@{applyMove}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{applyMove()}{applyMove()}}
+{\footnotesize\ttfamily void Controller\+::apply\+Move (\begin{DoxyParamCaption}\item[{unsigned}]{index,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$}]{moves }\end{DoxyParamCaption})}
+
+
+
+apply\+Move Method which applies the command move 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & the number which will indiqued the move \\
+\hline
+{\em moves} & the list which will containt moves \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_a28e4cfaf0a222c9243e4c501a920e91f}\label{classController_a28e4cfaf0a222c9243e4c501a920e91f}} 
+\index{Controller@{Controller}!applyMoves@{applyMoves}}
+\index{applyMoves@{applyMoves}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{applyMoves()}{applyMoves()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ Controller\+::apply\+Moves (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{tokens }\end{DoxyParamCaption})}
+
+
+
+apply\+Moves Method which applies the command moves 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & the vector which will contains the splited command \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector which contains the available moves for a piece 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a74469d2eac76c095bbb175dc0b413f5e}\label{classController_a74469d2eac76c095bbb175dc0b413f5e}} 
+\index{Controller@{Controller}!applyThrows@{applyThrows}}
+\index{applyThrows@{applyThrows}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{applyThrows()}{applyThrows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$ Controller\+::apply\+Throws (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+apply\+Throws Method which applies the command throws 
+
+\begin{DoxyReturn}{Returns}
+a vector which contains the possible throws 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a3ab3a5a5fc09b5925cd5b472d329ced9}\label{classController_a3ab3a5a5fc09b5925cd5b472d329ced9}} 
+\index{Controller@{Controller}!askCommand@{askCommand}}
+\index{askCommand@{askCommand}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{askCommand()}{askCommand()}}
+{\footnotesize\ttfamily std\+::string Controller\+::ask\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask\+Command Method which ask an input from the user 
+
+\begin{DoxyReturn}{Returns}
+the command entered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_a1be858448f493587e4dc402a1922bb99}\label{classController_a1be858448f493587e4dc402a1922bb99}} 
+\index{Controller@{Controller}!askVariante@{askVariante}}
+\index{askVariante@{askVariante}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{askVariante()}{askVariante()}}
+{\footnotesize\ttfamily std\+::string Controller\+::ask\+Variante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask\+Variante Method which ask an input from the user for the type of game 
+
+\begin{DoxyReturn}{Returns}
+the command entered 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classController_aabe2b4305a12bdf9eb0d5864c642d4ed}\label{classController_aabe2b4305a12bdf9eb0d5864c642d4ed}} 
+\index{Controller@{Controller}!diplayMoves@{diplayMoves}}
+\index{diplayMoves@{diplayMoves}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{diplayMoves()}{diplayMoves()}}
+{\footnotesize\ttfamily void Controller\+::diplay\+Moves (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$}]{moves }\end{DoxyParamCaption})}
+
+
+
+diplay\+Moves Method which displays the available moves for a piece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em moves} & the vector of the available moves \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_ab25975173494681d39d2cdad77d4f890}\label{classController_ab25975173494681d39d2cdad77d4f890}} 
+\index{Controller@{Controller}!displaySwitchEnd@{displaySwitchEnd}}
+\index{displaySwitchEnd@{displaySwitchEnd}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{displaySwitchEnd()}{displaySwitchEnd()}}
+{\footnotesize\ttfamily void Controller\+::display\+Switch\+End (\begin{DoxyParamCaption}\item[{Player\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+display\+Switch\+End Method which displays the switch of player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & the color of the player\textquotesingle{}s turn \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_a2db37dd074885db48d9192e888f84e94}\label{classController_a2db37dd074885db48d9192e888f84e94}} 
+\index{Controller@{Controller}!displayThrows@{displayThrows}}
+\index{displayThrows@{displayThrows}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{displayThrows()}{displayThrows()}}
+{\footnotesize\ttfamily void Controller\+::display\+Throws (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$}]{positions }\end{DoxyParamCaption})}
+
+
+
+display\+Throws Method which displays the available throws 
+
+
+\begin{DoxyParams}{Parameters}
+{\em positions} & the vector of positions for the possible throws \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classController_a18fadae8dfeba763b14f4a1150c2d8a3}\label{classController_a18fadae8dfeba763b14f4a1150c2d8a3}} 
+\index{Controller@{Controller}!tokenisation@{tokenisation}}
+\index{tokenisation@{tokenisation}!Controller@{Controller}}
+\doxysubsubsection{\texorpdfstring{tokenisation()}{tokenisation()}}
+{\footnotesize\ttfamily void Controller\+::tokenisation (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{tokens,  }\item[{std\+::string}]{command }\end{DoxyParamCaption})}
+
+
+
+tokenisation Method which splits the command entered by the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tokens} & the vector which will contains the splited command \\
+\hline
+{\em command} & the command entered by the user \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+controller.\+h\item 
+controller.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{classGame}{}\doxysection{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classGame}{Game}} Constuctor of class \mbox{\hyperlink{classGame}{Game}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoard}{Board}} \& \mbox{\hyperlink{classGame_abb01bda7e2fecca8571706abec4bc3dd}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em get\+Board Gets the attribute board of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}} \& \mbox{\hyperlink{classGame_a7f0c1e25a51d3837a5575a68a8f94c12}{get\+Current\+Player}} ()
+\begin{DoxyCompactList}\small\item\em get\+Current\+Player Gets the attribute current of the class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPosition}{Position}} \& \mbox{\hyperlink{classGame_ac60166dd54302b6896ea1e2a39a19e44}{get\+Selected}} ()
+\begin{DoxyCompactList}\small\item\em get\+Selected This is the getter for the attribute selected \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_af9e2e49005e2a3109a4e56c72149c5b8}\label{classGame_af9e2e49005e2a3109a4e56c72149c5b8}} 
+unsigned \mbox{\hyperlink{classGame_af9e2e49005e2a3109a4e56c72149c5b8}{get\+Left\+Moves}} ()
+\begin{DoxyCompactList}\small\item\em get\+Left\+Moves Getter for the attribute left\+Moves \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a99057bbea1a7208f114149f81cc88ffe}\label{classGame_a99057bbea1a7208f114149f81cc88ffe}} 
+bool \mbox{\hyperlink{classGame_a99057bbea1a7208f114149f81cc88ffe}{get\+Has\+Throw}} ()
+\begin{DoxyCompactList}\small\item\em get\+Has\+Throw Getter for the attribute has\+Throw \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a537580c09ace89f00fc97fa8db297249}\label{classGame_a537580c09ace89f00fc97fa8db297249}} 
+void \mbox{\hyperlink{classGame_a537580c09ace89f00fc97fa8db297249}{set\+Selected}} (\mbox{\hyperlink{classPosition}{Position}} \&position)
+\begin{DoxyCompactList}\small\item\em set\+Selected This is the setter for the attribute selected \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a88eeda33871335f37f8bef3040a90748}{is\+Win}} ()
+\begin{DoxyCompactList}\small\item\em is\+Win Verify is the game is over if there\textquotesingle{}s an antigame or a piece on the opponent side \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a14073b7ee15e3a60b72112519be85453}\label{classGame_a14073b7ee15e3a60b72112519be85453}} 
+void \mbox{\hyperlink{classGame_a14073b7ee15e3a60b72112519be85453}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em initialize This method initialize all the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a2cc9029b5c744809158df9bbee052a6d}\label{classGame_a2cc9029b5c744809158df9bbee052a6d}} 
+void \mbox{\hyperlink{classGame_a2cc9029b5c744809158df9bbee052a6d}{initialize\+Variante}} ()
+\begin{DoxyCompactList}\small\item\em initialize\+Varainte This method initialize all the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_aff4eb07a5ab19120b4b858facdff49df}{move\+Piece}} (\mbox{\hyperlink{classMove}{Move}} move)
+\begin{DoxyCompactList}\small\item\em move\+Piece This method move a piece to a new position received \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classPiece}{Piece}} $>$ $>$ \& \mbox{\hyperlink{classGame_aa1a98049d1adadbe53425d11d8ea4914}{get\+Game\+Board}} ()
+\begin{DoxyCompactList}\small\item\em get\+Game\+Board This method gets the board\textquotesingle{}s game of the class\textquotesingle{}s attribute board \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a3bdfa049343c18bbca4f5dd950dec603}{anti\+Game}} ()
+\begin{DoxyCompactList}\small\item\em anti\+Game This method checks if there\textquotesingle{}s an antigame situation \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ \mbox{\hyperlink{classGame_ab0c36fcffbbb23539dbf9b269901064f}{get\+Moves}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em get\+Moves This method gets all the possible moves available for a \mbox{\hyperlink{classPiece}{Piece}} displacement \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_ac5bb47d0a9d19def361f4227af290aec}{is\+Opposite\+Side}} ()
+\begin{DoxyCompactList}\small\item\em is\+Opposite\+Side This method checks if there\textquotesingle{}s a piece of the current player on the last line of the opponent player \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$ \mbox{\hyperlink{classGame_a1de7154d644fba3c7f7bf9f59484986c}{get\+Throws}} ()
+\begin{DoxyCompactList}\small\item\em get\+Throws This method gets all the possible position available to throw a ball to \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}} \mbox{\hyperlink{classGame_a615d54d107e657b280495e2439b85705}{get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em get\+Winner This method gets the winner of the game \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_aa2829da6185be21ea1621b0e847ccc8d}{can\+Move}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em can\+Move This method checks if a piece can move only if it has no ball \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a9b626751a1b86c08bef5b88f10de3a10}{end\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em end\+Hand This method checks if it\textquotesingle{}s the end hand for the current player \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGame_a7d1373fc46b520b76e040e006ee89bec}{is\+Throwable}} (\mbox{\hyperlink{classPosition}{Position}} position)
+\begin{DoxyCompactList}\small\item\em is\+Throwable This method checks if a ball can be thrown from a piece selected \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a0ec994261f76cd82c587b27f4a73ba2c}\label{classGame_a0ec994261f76cd82c587b27f4a73ba2c}} 
+void \mbox{\hyperlink{classGame_a0ec994261f76cd82c587b27f4a73ba2c}{throw\+Ball}} (\mbox{\hyperlink{classPosition}{Position}})
+\begin{DoxyCompactList}\small\item\em throw\+Ball This method throws a ball to a new position \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGame_a6da4a863654b0ddc118bca39deb2c5d7}\label{classGame_a6da4a863654b0ddc118bca39deb2c5d7}} 
+void \mbox{\hyperlink{classGame_a6da4a863654b0ddc118bca39deb2c5d7}{switch\+Player}} ()
+\begin{DoxyCompactList}\small\item\em switch\+Player This method switch the current player and the opponent player \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGame_ad59df6562a58a614fda24622d3715b65}\label{classGame_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classGame}{Game}} Constuctor of class \mbox{\hyperlink{classGame}{Game}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGame_a3bdfa049343c18bbca4f5dd950dec603}\label{classGame_a3bdfa049343c18bbca4f5dd950dec603}} 
+\index{Game@{Game}!antiGame@{antiGame}}
+\index{antiGame@{antiGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{antiGame()}{antiGame()}}
+{\footnotesize\ttfamily bool Game\+::anti\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+anti\+Game This method checks if there\textquotesingle{}s an antigame situation 
+
+\begin{DoxyReturn}{Returns}
+true if there\textquotesingle{}s an antigame sitation else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_aa2829da6185be21ea1621b0e847ccc8d}\label{classGame_aa2829da6185be21ea1621b0e847ccc8d}} 
+\index{Game@{Game}!canMove@{canMove}}
+\index{canMove@{canMove}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{canMove()}{canMove()}}
+{\footnotesize\ttfamily bool Game\+::can\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+can\+Move This method checks if a piece can move only if it has no ball 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the selected piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it can move else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a9b626751a1b86c08bef5b88f10de3a10}\label{classGame_a9b626751a1b86c08bef5b88f10de3a10}} 
+\index{Game@{Game}!endHand@{endHand}}
+\index{endHand@{endHand}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{endHand()}{endHand()}}
+{\footnotesize\ttfamily bool Game\+::end\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+end\+Hand This method checks if it\textquotesingle{}s the end hand for the current player 
+
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s over else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_abb01bda7e2fecca8571706abec4bc3dd}\label{classGame_abb01bda7e2fecca8571706abec4bc3dd}} 
+\index{Game@{Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoard}{Board}} \& Game\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Board Gets the attribute board of the class. 
+
+\begin{DoxyReturn}{Returns}
+the attribute board of type \mbox{\hyperlink{classBoard}{Board}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a7f0c1e25a51d3837a5575a68a8f94c12}\label{classGame_a7f0c1e25a51d3837a5575a68a8f94c12}} 
+\index{Game@{Game}!getCurrentPlayer@{getCurrentPlayer}}
+\index{getCurrentPlayer@{getCurrentPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentPlayer()}{getCurrentPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} \& Game\+::get\+Current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Current\+Player Gets the attribute current of the class. 
+
+\begin{DoxyReturn}{Returns}
+the attribute current of type \mbox{\hyperlink{classPlayer}{Player}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_aa1a98049d1adadbe53425d11d8ea4914}\label{classGame_aa1a98049d1adadbe53425d11d8ea4914}} 
+\index{Game@{Game}!getGameBoard@{getGameBoard}}
+\index{getGameBoard@{getGameBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameBoard()}{getGameBoard()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classPiece}{Piece}} $>$ $>$ \& Game\+::get\+Game\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Game\+Board This method gets the board\textquotesingle{}s game of the class\textquotesingle{}s attribute board 
+
+\begin{DoxyReturn}{Returns}
+the board of the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ab0c36fcffbbb23539dbf9b269901064f}\label{classGame_ab0c36fcffbbb23539dbf9b269901064f}} 
+\index{Game@{Game}!getMoves@{getMoves}}
+\index{getMoves@{getMoves}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getMoves()}{getMoves()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classMove}{Move}} $>$ Game\+::get\+Moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+get\+Moves This method gets all the possible moves available for a \mbox{\hyperlink{classPiece}{Piece}} displacement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the piece selected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of the available moves 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ac60166dd54302b6896ea1e2a39a19e44}\label{classGame_ac60166dd54302b6896ea1e2a39a19e44}} 
+\index{Game@{Game}!getSelected@{getSelected}}
+\index{getSelected@{getSelected}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getSelected()}{getSelected()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPosition}{Position}} \& Game\+::get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Selected This is the getter for the attribute selected 
+
+\begin{DoxyReturn}{Returns}
+Attribute selected of type \mbox{\hyperlink{classPosition}{Position}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a1de7154d644fba3c7f7bf9f59484986c}\label{classGame_a1de7154d644fba3c7f7bf9f59484986c}} 
+\index{Game@{Game}!getThrows@{getThrows}}
+\index{getThrows@{getThrows}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getThrows()}{getThrows()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classPosition}{Position}} $>$ Game\+::get\+Throws (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Throws This method gets all the possible position available to throw a ball to 
+
+\begin{DoxyReturn}{Returns}
+A vector of the available positions. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a615d54d107e657b280495e2439b85705}\label{classGame_a615d54d107e657b280495e2439b85705}} 
+\index{Game@{Game}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getWinner()}{getWinner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}} Game\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Winner This method gets the winner of the game 
+
+\begin{DoxyReturn}{Returns}
+A player which is the winner 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_ac5bb47d0a9d19def361f4227af290aec}\label{classGame_ac5bb47d0a9d19def361f4227af290aec}} 
+\index{Game@{Game}!isOppositeSide@{isOppositeSide}}
+\index{isOppositeSide@{isOppositeSide}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isOppositeSide()}{isOppositeSide()}}
+{\footnotesize\ttfamily bool Game\+::is\+Opposite\+Side (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+is\+Opposite\+Side This method checks if there\textquotesingle{}s a piece of the current player on the last line of the opponent player 
+
+\begin{DoxyReturn}{Returns}
+true if there\textquotesingle{}s on else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a7d1373fc46b520b76e040e006ee89bec}\label{classGame_a7d1373fc46b520b76e040e006ee89bec}} 
+\index{Game@{Game}!isThrowable@{isThrowable}}
+\index{isThrowable@{isThrowable}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isThrowable()}{isThrowable()}}
+{\footnotesize\ttfamily bool Game\+::is\+Throwable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+is\+Throwable This method checks if a ball can be thrown from a piece selected 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The selected piece\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it can be thrown else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_a88eeda33871335f37f8bef3040a90748}\label{classGame_a88eeda33871335f37f8bef3040a90748}} 
+\index{Game@{Game}!isWin@{isWin}}
+\index{isWin@{isWin}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isWin()}{isWin()}}
+{\footnotesize\ttfamily bool Game\+::is\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+is\+Win Verify is the game is over if there\textquotesingle{}s an antigame or a piece on the opponent side 
+
+\begin{DoxyReturn}{Returns}
+true if it\textquotesingle{}s over else false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGame_aff4eb07a5ab19120b4b858facdff49df}\label{classGame_aff4eb07a5ab19120b4b858facdff49df}} 
+\index{Game@{Game}!movePiece@{movePiece}}
+\index{movePiece@{movePiece}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{movePiece()}{movePiece()}}
+{\footnotesize\ttfamily void Game\+::move\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMove}{Move}}}]{move }\end{DoxyParamCaption})}
+
+
+
+move\+Piece This method move a piece to a new position received 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move to apply to a piece to a new position \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}
